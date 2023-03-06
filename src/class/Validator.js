@@ -4,7 +4,7 @@ class Validator {
 
   validateUsername(v) {
     const validCharacters = '([a-zA-Z]+)'
-    const validSymbols = '(-*_*)'
+    const validSymbols = '([-_]*)'
     const onlyThreeNum = '([0-9]{0,3})'
 
     //const reg = new RegExp(/^([-_a-zA-Z]+)([0-9]{0,3})([-_a-zA-Z]+)$/)

@@ -11,6 +11,8 @@ test('validateUsername test', () => {
   expect(result.validateUsername('user_')).toBe(false);
   expect(result.validateUsername('us-_er')).toBe(true);
   expect(result.validateUsername('us55555er')).toBe(false);
+  expect(result.validateUsername('user')).toBe(true);
+  expect(result.validateUsername('us_-__--__-_er')).toBe(true);
 });
 
 test('validatePhone test', () => {
